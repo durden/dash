@@ -73,14 +73,14 @@ callbacks for local testing.  Unforunately it requires a bit of manual setup.
           - cd codrspace_oauth_instance
           - cp example_local_settings.py local_settings.py
           - set `GITHUB_USER` in your local settings to your github username
-          - python manage.py sncydb
+          - python manage.py syncdb
           - python manage.py runserver localhost:9000
 
           ** Now you have your local github OAuth instance running that your
           main instance can authenticate against.
 
           - cd codrspace
-          - python manage.py sncydb
+          - python manage.py syncdb
           - python manage.py runserver
 
 Now you have two instances of the django development server running. One for 
